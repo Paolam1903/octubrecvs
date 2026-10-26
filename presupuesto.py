@@ -79,7 +79,63 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
         # Andrea
         elif "ANDREA" in nombre:
             return 937.5 / 2500
-    
+
+    # ==================================================
+    # DABEIBA
+    # ==================================================
+
+    if cvs == "DABEIBA":
+
+        # Líder
+        if rol == "LIDER":
+            return 1089 / 1200
+
+        # Yeilisa Fernanda
+        elif "YEILISA" in nombre:
+            return 111 / 1200
+    # ==================================================
+    # EL BAGRE
+    # ==================================================
+
+    if cvs == "EL BAGRE":
+
+        # Líder
+        if rol == "LIDER":
+            return 821 / 3500
+
+        # Darly
+        elif "DARLY" in nombre:
+            return 1196 / 3500
+
+        # Jeider
+        elif "JEIDER" in nombre:
+            return 1196 / 3500
+
+        # Marvin
+        elif "MARVIN" in nombre:
+            return 287 / 3500  
+
+    # ==================================================
+    # COPACABANA
+    # ==================================================
+
+    if cvs == "COPACABANA":
+
+        # Lider
+        if rol == "LIDER":
+            return 231 / 3000
+
+        # Vanessa
+        elif "VANESSA" in nombre:
+            return 519 / 3000
+        
+        # Alexandra
+        elif "ALEXANDRA" in nombre:
+            return 1125 / 3000
+
+        # Bibiana
+        elif "BIBIANA" in nombre:
+            return 1125 / 3000  
     
     # ==================================================
     # 🔴 REGLAS NORMALES
