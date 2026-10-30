@@ -88,11 +88,12 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
 
         # Líder
         if rol == "LIDER":
-            return 1089 / 1200
+            return 1034 / 1200
 
         # Yeilisa Fernanda
         elif "YEILISA" in nombre:
-            return 111 / 1200
+            return 166 / 1200
+        
     # ==================================================
     # EL BAGRE
     # ==================================================
@@ -145,11 +146,11 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
 
         # Líder
         if rol == "LIDER":
-            return 1182 / 2400
+            return 1477 / 2400
 
         # Yeilisa Fernanda
         elif "YEILISA" in nombre:
-            return 1218 / 2400
+            return 923 / 2400
     
     # ==================================================
     # 🔴 REGLAS NORMALES

@@ -34,7 +34,7 @@ if not RUTA_LIQ.exists() or not RUTA_METAS.exists():
 # =============================
 st.markdown("""
 <div style="background-color:#E30613;padding:15px;border-radius:10px">
-<h1 style="color:white;text-align:center">📊 Dashboard Comercial ventas, CVS PLUS y Encuestas al 25– Accesorios al 17</h1>
+<h1 style="color:white;text-align:center">📊 Dashboard Comercial ventas al 29, CVS PLUS al 27 y Encuestas al 25– Accesorios al 28</h1>
 </div>
 """, unsafe_allow_html=True)
 
@@ -636,11 +636,11 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
 
         # Líder
         if rol == "LIDER":
-            return 1089 / 1200
+            return 1034 / 1200
 
         # Yeilisa Fernanda
         elif "YEILISA" in nombre:
-            return 111 / 1200
+            return 166 / 1200
 
     # ==================================================
     # EL BAGRE
@@ -694,11 +694,11 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
 
         # Líder
         if rol == "LIDER":
-            return 1182 / 2400
+            return 1477 / 2400
 
         # Yeilisa Fernanda
         elif "YEILISA" in nombre:
-            return 1218 / 2400
+            return 923 / 2400
         
     # ==================================================
     # 🔴 REGLAS NORMALES
