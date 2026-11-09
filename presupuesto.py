@@ -7,16 +7,6 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
 
     cvs = str(cvs).upper()
     nombre = str(nombre).upper() if nombre else ""
-           
-    # ==================================================
-    # ==================================================
-    # 🔴 REGLA ESPECIAL FRONTINO
-    # ==================================================
-    if cvs in ["SEGOVIA"]:
-        if rol == "LIDER":
-            return 0.50
-        else:
-            return 0.50
 
     # ==================================================
     # BELLO
@@ -151,6 +141,24 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
         # Yeilisa Fernanda
         elif "YEILISA" in nombre:
             return 923 / 2400
+
+    # ==================================================
+    # SEGOVIA
+    # ==================================================
+
+    if cvs == "SEGOVIA":
+
+        # Líder
+        if rol == "LIDER":
+            return 592 / 2200
+
+        # Sandra
+        elif "SANDRA" in nombre:
+            return 1397 / 2200
+
+        # Yuliana
+        elif "YULIANA" in nombre:
+            return 211 / 2200
     
     # ==================================================
     # 🔴 REGLAS NORMALES

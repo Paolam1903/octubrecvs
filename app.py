@@ -34,7 +34,7 @@ if not RUTA_LIQ.exists() or not RUTA_METAS.exists():
 # =============================
 st.markdown("""
 <div style="background-color:#E30613;padding:15px;border-radius:10px">
-<h1 style="color:white;text-align:center">📊 Dashboard Comercial ventas al 29, CVS PLUS al 27 y Encuestas al 25– Accesorios al 28</h1>
+<h1 style="color:white;text-align:center">📊 Dashboard Comercial ventas, CVS PLUS, encuesta– accesorios de octubre</h1>
 </div>
 """, unsafe_allow_html=True)
 
@@ -556,16 +556,6 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
     nombre = str(nombre).upper() if nombre else ""
 
     # ==================================================
-    # ==================================================
-    # 🔴 REGLA ESPECIAL FRONTINO
-    # ==================================================
-    if cvs in ["SEGOVIA"]:
-        if rol == "LIDER":
-            return 0.50
-        else:
-            return 0.50
-
-    # ==================================================
     # BELLO
     # ==================================================
 
@@ -699,6 +689,24 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
         # Yeilisa Fernanda
         elif "YEILISA" in nombre:
             return 923 / 2400
+
+    # ==================================================
+    # SEGOVIA
+    # ==================================================
+
+    if cvs == "SEGOVIA":
+
+        # Líder
+        if rol == "LIDER":
+            return 592 / 2200
+
+        # Sandra
+        elif "SANDRA" in nombre:
+            return 1397 / 2200
+
+        # Yuliana
+        elif "YULIANA" in nombre:
+            return 211 / 2200
         
     # ==================================================
     # 🔴 REGLAS NORMALES
